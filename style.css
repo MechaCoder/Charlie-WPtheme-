@@ -1,0 +1,176 @@
+/*   
+Theme Name: Charile1
+Theme URI: proudmandandc.co.uk
+Description: a-brief-description
+Author: matthew Proudman 
+Author URI: proudmandandc.co.uk
+Version: 0.0.1
+.
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 42):
+ * proudmandandc@gmail.com wrote this file.  As long as you retain this notice you
+ * can do whatever you want with this stuff. If we meet some day, and you think
+ * this stuff is worth it, you can buy me a beer in return. mat Proudman
+ * ----------------------------------------------------------------------------
+.
+*/
+
+/* Pls for the Love of WP pls Child Style don't work */
+
+body {
+	background-color: gray;
+}
+
+nav {
+	border-bottom: none;
+}
+.row {
+	margin-left: 0px;
+}
+.rounded{
+	text-align: center; 
+	background-color: purple;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top:auto;
+}
+
+#cust_menu_widget .page_item {
+	list-style-type: none;
+	margin-left: -38px;
+	font-size: 2em;
+	text-align: center;
+}
+
+#cust_menu_widget .page_item:hover {
+	background-color: #522966;
+}
+
+#cust_menu_widget .current_page_item {
+	background-color: #CC66FF;
+}
+
+#cust_menu_widget .current_page_item a {
+	color:white;
+}
+
+#cust_menu_widget .page_item a {
+	color:black;
+}
+
+#cust_menu_widget .page_item a:hover {
+	color:white;
+}
+
+#cust-page-sidebar {
+	background-color:lavender; color:black;
+}
+
+#cust-page-sidebar a {text-decoration: none;
+}
+
+#cust-page-sidebar ul {
+	padding-left: 37px !important;
+}
+
+#cust-sidebar{
+	background-color: white;}
+
+#cust-head-siteNav li{
+	float: right;
+	width: 25%;
+	text-align: center;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	border-radius: 10px;
+}
+
+#cust-head-siteNav li:hover{
+	background-color: purple;
+}
+
+#cust-head-siteNav li a{
+	color:white;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+
+#cust-head {
+	margin-top: 0px; 
+	background-color: #990099;
+	color: white;
+}
+#cust-page-info {
+	background-color: black;
+}
+
+#cust-page-info>h4{
+	margin-bottom: 0px !important;
+}
+#cust-page-title, #cust-page-author {
+	text-align: center; color:purple;
+}
+#cust-page-content {
+	background-color: white; 
+	color: black;
+}
+
+#cust-page-sidebar {
+	background-color: lavender;
+}
+
+#cust-page-sideCol>.rounded {
+	margin-top: 0px
+}
+
+#cust_menu_widget #s {
+	background-color: black;
+	width: 50%;
+	color: blueviolet;
+	font-size: 1.5em;
+}
+
+#cust_menu_widget #searchsubmit {
+	font-size: 1.5em;
+	float: right;
+	margin-right: 20px;
+}
+#cust-footer-ColLeft, #cust-footer-ColCent, #cust-footer-ColRigt{
+	font-size: 2em;
+	text-align: center;}
+
+#cust-foorter-ColLeft-title, #cust-foorter-ColCent-title, #cust-footer-ColRigt-title{
+	background-color: purple;
+	color:white;
+}
+#cust-foorter-ColLeft-content , #cust-foorter-ColCent-content , #cust-footer-ColRigt-content {
+	background-color: white;
+	font-size: 1em;
+}
+.sub-menu {
+	display: none;
+	position: absolute;
+	background: #222;
+	padding: 10px 15px;
+	width: 200px;
+	font-size: 1em;
+	z-index: 1;
+	list-style-type :none;
+	width: 150px;
+    top: 72px;
+}
+.sub-menu .sub-menu{
+	margin-left:-15px;
+	background-color:blue;
+	top:60;
+	background: red;
+	width:144px;
+	left:21px;
+	font-size: 1em;
+}
+
+li:hover .sub-menu {
+	display: block;
+}
