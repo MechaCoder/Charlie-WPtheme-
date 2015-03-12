@@ -1,10 +1,12 @@
 /*   
 Theme Name: Charile1
 Theme URI: proudmandandc.co.uk
-Description: a-brief-description
-Author: matthew Proudman 
-Author URI: proudmandandc.co.uk
-Version: 0.0.1
+Description: this is my first theme so plese shoot me reviews, sejestion and companints as needed ^_^
+Author: Matthew Proudman
+Author URI: proudmandandc.co.uk;
+Version: 0.0.1;
+License: THE BEER-WARE LICENSE (Revision 42);
+License URI: https://tldrlegal.com/license/beerware-license#fulltext;
 .
  * ----------------------------------------------------------------------------
  * "THE BEER-WARE LICENSE" (Revision 42):
@@ -16,161 +18,162 @@ Version: 0.0.1
 */
 
 /* Pls for the Love of WP pls Child Style don't work */
+/* core */
+.sticky {}
+.gallery-caption{}
+.bypostauthor {}
 
-body {
-	background-color: gray;
-}
-
-nav {
-	border-bottom: none;
-}
-.row {
-	margin-left: 0px;
-}
-.rounded{
-	text-align: center; 
-	background-color: purple;
-	color: white;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-top:auto;
+.alignnone {
+    margin: 5px 20px 20px 0;
 }
 
-#cust_menu_widget .page_item {
-	list-style-type: none;
-	margin-left: -38px;
-	font-size: 2em;
-	text-align: center;
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
 }
 
-#cust_menu_widget .page_item:hover {
-	background-color: #522966;
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
 }
 
-#cust_menu_widget .current_page_item {
-	background-color: #CC66FF;
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
 }
 
-#cust_menu_widget .current_page_item a {
-	color:white;
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
 }
 
-#cust_menu_widget .page_item a {
-	color:black;
+a img.alignnone {
+    margin: 5px 20px 20px 0;
 }
 
-#cust_menu_widget .page_item a:hover {
-	color:white;
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
 }
 
-#cust-page-sidebar {
-	background-color:lavender; color:black;
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
 
-#cust-page-sidebar a {text-decoration: none;
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
 }
 
-#cust-page-sidebar ul {
-	padding-left: 37px !important;
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
 }
 
-#cust-sidebar{
-	background-color: white;}
-
-#cust-head-siteNav li{
-	float: right;
-	width: 25%;
-	text-align: center;
-	padding-top: 21px;
-	padding-bottom: 21px;
-	border-radius: 10px;
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
 }
 
-#cust-head-siteNav li:hover{
-	background-color: purple;
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
 }
 
-#cust-head-siteNav li a{
-	color:white;
-	text-decoration: none;
-	font-size: 1.5em;
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
 }
 
-
-#cust-head {
-	margin-top: 0px; 
-	background-color: #990099;
-	color: white;
-}
-#cust-page-info {
-	background-color: black;
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
 }
 
-#cust-page-info>h4{
-	margin-bottom: 0px !important;
-}
-#cust-page-title, #cust-page-author {
-	text-align: center; color:purple;
-}
-#cust-page-content {
-	background-color: white; 
-	color: black;
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
 }
 
-#cust-page-sidebar {
-	background-color: lavender;
-}
-
-#cust-page-sideCol>.rounded {
-	margin-top: 0px
-}
-
-#cust_menu_widget #s {
-	background-color: black;
-	width: 50%;
-	color: blueviolet;
-	font-size: 1.5em;
-}
-
-#cust_menu_widget #searchsubmit {
-	font-size: 1.5em;
-	float: right;
-	margin-right: 20px;
-}
-#cust-footer-ColLeft, #cust-footer-ColCent, #cust-footer-ColRigt{
-	font-size: 2em;
-	text-align: center;}
-
-#cust-foorter-ColLeft-title, #cust-foorter-ColCent-title, #cust-footer-ColRigt-title{
-	background-color: purple;
-	color:white;
-}
-#cust-foorter-ColLeft-content , #cust-foorter-ColCent-content , #cust-footer-ColRigt-content {
-	background-color: white;
-	font-size: 1em;
-}
-.sub-menu {
-	display: none;
-	position: absolute;
-	background: #222;
-	padding: 10px 15px;
-	width: 200px;
-	font-size: 1em;
-	z-index: 1;
-	list-style-type :none;
-	width: 150px;
-    top: 72px;
-}
-.sub-menu .sub-menu{
-	margin-left:-15px;
-	background-color:blue;
-	top:60;
-	background: red;
-	width:144px;
-	left:21px;
-	font-size: 1em;
-}
-
-li:hover .sub-menu {
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
 	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }
+
+/* Base */
+body {background-color: white;}
+.cust-head {padding-left: 25px; background-color: purple}
+.cust-head-siteTitle{font-size: 3em;}
+.cust-head-siteDis {font-style: italic;padding-left:30px;}
+/* site nav */
+.cust-head-siteNav {padding-right: 20px;}
+.cust-head-siteNav .menu {display:none;}
+.cust-head-siteNav li {float:Right; width:200px}
+.cust-head-siteNav .menu-item-has-children:hover li {display:block;}
+.cust-head-siteNav li {border:none;}
+.cust-head-siteNav .sub-menu li {background-color:transparent;display:none;position: absolute;padding-top:25px;padding-bottom:25px;}
+.cust-head-siteNav .menu-item-has-children:hover li {display:block;}
+.cust-head-siteNav .sub-menu a {color: black; background-color:#F4A460; padding:15px; border-radius: 9px; margin-top:10px}
+.cust-head-siteNav .sub-menu li {left:68%;}
+.cust-head-siteNav .sub-menu li:hover {display:block;}
+.cust-head-siteNav li:hover, .cust-head-siteNav li a {text-decoration:none; color:white;}
+.cust-head-siteNav .sub-menu li {background-color:transparent; z-index:1;}
+.cust-head-siteNav li { -webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;}
+.cust-head-siteTitle h1 {color:white;}
+.cust-head-siteDis {color:silver;}
+.cust-head-siteNav li {height:50px;text-align:center;padding-top:15px;}
+.cust-head-siteNav .sub-menu li:hover {background-color:transparent}
+.cust-head-siteNav a {padding-top:15px; padding-bottom:15px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;}
+.cust-head-siteNav li {font-size:1.5em;}
+.cust-head-siteNav li:hover {background:grey;}
+.cust-head-siteNav .sub-menu li {font-size:1em; z-index: 9;}
+/* content */
+
+.cust-page-mainCol .cust-page-info {background-color:purple; color:silver; padding-left:20px;}
+.cust-page-content{border-left:1px purple solid; border-right:1px purple solid}
+
+/*site footer */
+.cust-footer-main {background-color:white;}
+.cust-footer-ColLeft {text-align:left;}
+.cust-footer-ColRigt {text-align:right;}
+.cust-footer-ColCent {text-align:center;}
+.cust-foorter-ColLeft-title {font-size:1.5em}
+.cust-foorter-ColCent-title {font-size:1.5em}
+.cust-footer-ColRigt-title {font-size:1.5em}
+.cust-foorter-ColLeft-title,.cust-foorter-ColCent-title,.cust-footer-ColRigt-title {background-color:#660066;color: white; }
+.cust-foorter-ColLeft-content,.cust-foorter-ColCent-content,.cust-footer-ColRigt-content {background-color:white; }
+.cust-footer-main {background-color:#6A5ACD; padding-bottom:20px; padding-top:20px;}
+.cust-footer-ColRigt-content, .cust-foorter-ColCent-content, .cust-footer-ColLeft {height: 16%;}
+
+/*site sidebar*/
+.cust_menu_widget .rounded {background-color:#800080; color:silver; padding-top:10px; padding-bottom:10px; text-align:center; margin-top:0px}
+.cust-page-main {padding:0px;}
+.cust_menu_widgetL li, .cust_menu_widgetC li, .cust_menu_widgetR li {list-style:none;}

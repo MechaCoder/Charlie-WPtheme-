@@ -1,4 +1,5 @@
 <?php
+//import Boostrap
 function MT1_theme_style(){
 	wp_enqueue_style( 'boot_strap1' , get_template_directory_uri() . '/css/bootstrap.min.css' );
 	wp_enqueue_style( 'boot_strap2' , get_template_directory_uri() . '/css/bootstrap-theme.css');
@@ -18,7 +19,7 @@ function themes_JS(){
 
 // *** --- Menu --- ***
 function reg_header_menu(){	
-	register_nav_menu('header-menu', __('Header Menu'));
+	register_nav_menu('header-menu', __('Header_Menu'));
 }
 add_action('init','reg_header_menu');
 
@@ -34,4 +35,60 @@ function arphabet_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+function Foot_left() {
+
+	register_sidebar( array(
+		'name'          => 'Footer Left',
+		'id'            => 'FootLeft',
+		'before_widget' => '<div id="cust_menu_widgetL">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'Foot_left' );
+
+
+//Footer Widget Areas
+function Foot_center() {
+
+	register_sidebar( array(
+		'name'          => 'Footer center',
+		'id'            => 'FootCenter',
+		'before_widget' => '<div id="cust_menu_widgetC">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'Foot_center' );
+
+function Foot_right() {
+
+	register_sidebar( array(
+		'name'          => 'Footer right',
+		'id'            => 'Footright',
+		'before_widget' => '<div id="cust_menu_widgetR">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'Foot_right' );
+
+
+function blog_sidebar() {
+
+	register_sidebar( array(
+		'name'          => 'blog sidebar',
+		'id'            => 'blog_sidebar',
+		'before_widget' => '<div id="cust_menu_widgetR">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'blog_sidebar' );
+
 ?>
