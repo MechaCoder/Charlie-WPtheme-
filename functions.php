@@ -91,4 +91,23 @@ function blog_sidebar() {
 }
 add_action( 'widgets_init', 'blog_sidebar' );
 
+// Admin Customization 
+function Charile1_admin_color_scheme(){
+	$key = 'Prouders-Color';
+	$name = 'mats scheme';
+	$url = (get_stylesheet_directory_uri() . '/Admin-Color/my-colors/colors2.css');
+	$colors = array( '#384047', '#5BC67B', '#838cc7', '#ffffff' );
+	wp_admin_css_color( $key, $name, $url, $colors );
+};
+add_action( 'admin_init',  'Charile1_admin_color_scheme');
+
+function Charile1_admin_page_block(){
+	remove_menu_page( 'themes.php' );
+	remove_menu_page( 'plugins.php' );
+	remove_menu_page( 'tools.php' );
+	remove_menu_page( 'options-general.php' );
+}
+//add_action( 'admin_menu', 'Charile1_admin_page_block' );
+
+
 ?>

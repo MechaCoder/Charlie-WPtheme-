@@ -1,0 +1,57 @@
+/*
+ * Button mixin- creates 3d-ish button effect with correct
+ * highlights/shadows, based on a base color.
+ */
+@import url("colors.css"); /* imports standing admin theme */
+
+html {background: black; }
+h2{color:purple;}
+h3.theme-name{
+    color:purple; 
+    background:black !important;
+}
+
+.hide-if-no-js.add-new-h2 {
+    background:purple;
+    color:silver;
+}
+
+.hide-if-no-js.add-new-h2:hover {
+    background-color:grey; 
+    color:purple;
+}
+
+#wp-filter-search-input{
+    background:black; 
+    border:1px purple solid; 
+    color:purple;
+}
+
+#wp-filter-search-input::-webkit-input-placeholder {
+    color:purple;
+}
+
+#wp-filter-search-input:-moz-placeholder {
+    color:purple;
+}
+#wp-filter-search-input:-ms-input-placeholder {color:purple}
+
+label,p, h3.title, tbody ,th {color:white !important;}
+
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+    background:MediumPurple !important; 
+    color:blue !important;
+}
+
+.wp-submenu.wp-submenu-wrap{
+    background:#008080 !important;}
+
+.wp-submenu.wp-submenu-wrap a {
+    color:#fff !important;
+}
+
+.wp-submenu.wp-submenu-wrap a:hover{
+    background-color:#708090 !important;
+}
+
+.wp-menu-name:hover{background:#008080 !important;}
