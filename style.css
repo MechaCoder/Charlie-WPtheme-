@@ -161,18 +161,7 @@ body {background-color: white;}
 .cust-page-content{border-left:1px purple solid; border-right:1px purple solid}
 
 /*site footer */
-.cust-footer-main {background-color:white;}
-.cust-footer-ColLeft {text-align:left;}
-.cust-footer-ColRigt {text-align:right;}
-.cust-footer-ColCent {text-align:center;}
-.cust-foorter-ColLeft-title {font-size:1.5em}
-.cust-foorter-ColCent-title {font-size:1.5em}
-.cust-footer-ColRigt-title {font-size:1.5em}
-.cust-foorter-ColLeft-title,.cust-foorter-ColCent-title,.cust-footer-ColRigt-title {background-color:#660066;color: white; }
-.cust-foorter-ColLeft-content,.cust-foorter-ColCent-content,.cust-footer-ColRigt-content {background-color:white; }
-.cust-footer-main {background-color:#6A5ACD; padding-bottom:20px; padding-top:20px;}
-.cust-footer-ColRigt-content, .cust-foorter-ColCent-content, .cust-footer-ColLeft {height: 16%;}
-
+.cust-footer-Colright, .cust-footer-ColCenter, .cust-footer-ColLeft {background: white;}
 /*site sidebar*/
 .cust_menu_widget .rounded {background-color:#800080; color:silver; padding-top:10px; padding-bottom:10px; text-align:center; margin-top:0px}
 .cust-page-main {padding:0px;}

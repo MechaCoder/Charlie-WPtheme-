@@ -1,6 +1,6 @@
 <head>
 	<meta charset="UTF-8">
-	<title><?php wp_title(); ?></title>
+	<title><?php wp_title(" "); ?></title>
 	<?php wp_head(); ?>
 </head>
 <body> 
@@ -9,7 +9,7 @@
 		<div class='cust-head-siteTitle col-md-6'><a href="<?php home_url(); ?>"><?php bloginfo('name'); ?></a></div>
 	</div>
 	<div class='cust-head-2Row row'>
-		<h2  class='cust-head-siteDis col-md-6'><?php wp_title(); ?></h2>
+		<h2  class='cust-head-siteDis col-md-6'><?php wp_title(' '); ?></h2>
 		<nav class='cust-head-siteNav col-md-6'>
 			<?php wp_nav_menu(array(
 				'theme_location'  => 'header-menu',

@@ -19,7 +19,7 @@ function themes_JS(){
 
 // *** --- Menu --- ***
 function reg_header_menu(){	
-	register_nav_menu('header-menu', __('Header_Menu'));
+	register_nav_menu('header-menu', 'header Menu');
 }
 add_action('init','reg_header_menu');
 
@@ -54,7 +54,7 @@ add_action( 'widgets_init', 'Foot_left' );
 function Foot_center() {
 
 	register_sidebar( array(
-		'name'          => 'Footer center',
+		'name'          => 'Footer Center',
 		'id'            => 'FootCenter',
 		'before_widget' => '<div id="cust_menu_widgetC">',
 		'after_widget'  => '</div>',
@@ -67,7 +67,7 @@ add_action( 'widgets_init', 'Foot_center' );
 function Foot_right() {
 
 	register_sidebar( array(
-		'name'          => 'Footer right',
+		'name'          => 'Footer Right',
 		'id'            => 'Footright',
 		'before_widget' => '<div id="cust_menu_widgetR">',
 		'after_widget'  => '</div>',

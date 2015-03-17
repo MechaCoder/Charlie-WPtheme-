@@ -16,10 +16,10 @@
 				<p><?php the_tags(); ?></p>
 			</div>
 		</div>
-		<div class='cust-page-sideCol col-md-4' style='padding-left:0px'>
-			<div class='cust-page-sidebar' style='margin-top:-10px'><?php dynamic_sidebar('Home right sidebar'); ?></div>
-		</div>
 	<?php  endwhile; else:?><p> no Content found </p><?php endif; ?>
+</div>
+<div class='cust-page-sideCol col-md-4' style='padding-left:0px'>
+	<div class='cust-page-sidebar' style='margin-top:-10px'><?php dynamic_sidebar('Home right sidebar'); ?></div>
 </div>
 <?php get_footer(); ?>
 </html>
